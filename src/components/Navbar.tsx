@@ -12,9 +12,8 @@ const Navbar = () => {
                 NET-NEX
                     </Link></li>
                 <li className="text-white mx-9 "><Link to="/events" className="hover:text-b3">EVENTS</Link></li>
-                <li className="text-white mx-9 "><Link to="/blogs" className="hover:text-b3">PROJECTS</Link></li>
-                <li className="text-white mx-9 "><Link to="/team" className="hover:text-b3">TEAM</Link></li>
-                <li className="text-white mx-9 "><Link to="/contact_us" className="hover:text-b3">CONTACT US</Link></li>
+                <li className="text-white mx-9 "><Link to="/projects" className="hover:text-b3">PROJECTS</Link></li>
+                
             </ul>
             <ul className="flex items-center justify-between sm:hidden">
                 <li className="text-white mx-9 text-center py-3"><Link to="/" className="text-3xl">
