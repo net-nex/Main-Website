@@ -8,7 +8,7 @@ type Props = {}
 
 const Domains = (props: Props) => {
   return (
-    <div className='bg-Background bg-center bg-cover h-full max-w-[100vw] pt-2'>
+    <div className='bg-Background bg-center bg-cover min-h-[100vh] max-w-[100vw] pt-2' >
     <div className='flex flex-col items-center'>
         <div className='tracking-[0.65rem] text-5xl xl:text-9xl sm:text-xl md:text-5xl pt-5 text-center text-white font-bold'>
             DOMAINS
@@ -60,7 +60,6 @@ const Domains = (props: Props) => {
                 </div>
                 <div className='text-white pt-3 text-sm ml-5 pr-3 text-justify flex flex-col items-center justify-items-center'>
                 For people who are artistic and content writing enthusiasts and with creative minds                    <br/>
-                
                 </div> 
             </div>
         </div>

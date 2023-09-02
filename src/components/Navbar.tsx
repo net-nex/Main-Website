@@ -29,9 +29,8 @@ const Navbar = () => {
             <div className="duration-600 transition-all">
                 <ul className="flex sm:hidden flex-col items-center justify-center transition-all ease-in duration-300 ">
                     <li className="text-white mx-9 "><Link to="/events" className="hover:text-b3">events</Link></li>
-                    <li className="text-white mx-9 "><Link to="/blogs" className="hover:text-b3">blogs</Link></li>
-                    <li className="text-white mx-9 "><Link to="/team" className="hover:text-b3">team</Link></li>
-                    <li className="text-white mx-9 "><Link to="/contact_us" className="hover:text-b3">contact us</Link></li>
+                    <li className="text-white mx-9 "><Link to="/projects" className="hover:text-b3">Projects</Link></li>
+ 
                 </ul>
             </div>
               }

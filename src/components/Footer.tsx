@@ -6,8 +6,6 @@ const Footer = (props: Props) => {
   return (
     <div>
         <footer className=" bottom-0">
-
-
   <div className="mx-auto max-w-5xl px-4 py-12 sm:px-6 lg:px-8">
         <div className='flex w-full items-center justify-center justify-items-end flex-row'>
             <div className='w-20 h-20'>
@@ -62,18 +60,9 @@ const Footer = (props: Props) => {
         </a>
       </li>
 
-      <li>
-        <a className="text-gray-700 transition hover:text-gray-700/75" href="/">
-          Contact Us
-        </a>
-      </li>
-
-      
     </ul>
 
     <ul className="mt-12 flex justify-center gap-6 md:gap-8">
-      
-
       <li>
         <a
           href="/"

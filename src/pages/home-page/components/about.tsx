@@ -2,7 +2,7 @@ type Props = {}
 
 const About = (props: Props) => {
   return (
-    <div className=' min-h-[100vh] max-w-[100vw]   text-white flex flex-col sm:flex-row items-center justify-around'>
+    <div className=' min-h-[100vh] max-w-[100vw]   text-white flex flex-col sm:flex-row items-center justify-around' >
             <div className='py-5 bg-black min-h-[50vh] sm:h-[100vh] w-full flex flex-col items-center justify-center'>
                 <div className='font-bold  tracking-[0.75rem] text-6xl xl:text-9xl sm:text-6xl md:text-5xl  mx-4 z-30 '>
                     ABOUT

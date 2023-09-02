@@ -5,10 +5,11 @@
   }
   
   /* Timeline Container */
-  .timeline {
+  .outer {
     display: flex;
-    justify-content: end;
-
+    flex-direction: column;
+    justify-content:flex-end;
+    align-items: center;
   }
   
   /* Card container */
@@ -84,8 +85,8 @@
     color: gray;
     border-radius: 10px;
     padding: 10px;
-  }
-  
+    
+  }  
   /* Title of the card */
   .title {
     color: orangered;
@@ -106,6 +107,9 @@
   /* text right if the card is even  */
   .card:nth-child(even) > .info > .title {
     text-align: right;
+  }
+  .card:nth-child(odd) > .info > .title {
+    text-align: left;
   }
   
   /* setting dot to the left if the card is odd */
