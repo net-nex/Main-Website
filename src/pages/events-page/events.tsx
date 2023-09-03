@@ -3,12 +3,14 @@ import Navbar from '../../components/Navbar'
 import expExplore from '../../utils/EspExplore.svg'
 import './events.css'
 import Footer from '../../components/Footer'
+import Preloader from '../../components/preLoader'
 type Props = {}
 
 const Events = (props: Props) => {
   return (
-    <div className=' h-full w-full bg-[#d7d7d7] text-white' style={{backgroundColor: '#2d3436', 'backgroundImage': ' linear-gradient(147deg, #4d4855 0%, #000000 74%)'}}>
+    <div className=' h-full w-full  text-white'>
       <Navbar/>
+      <Preloader/>
       <div>
       <div className='font-extrabold  pt-20 text-center text-4xl'>
         UPCOMING EVENT

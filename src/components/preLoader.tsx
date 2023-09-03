@@ -263,11 +263,8 @@ export default function Preloader() {
   } as ISourceOptions;
 
   return (
-    <div className="relative min-w-[100vw] min-h-[100vh]">
+    <div className="]">
       <Particles id="tsparticles" options={options} init={particlesInit} className="z-[0]"/>
-      <div className="text-white w-[100vw] h-[100vh] flex text-xl justify-center items-center z-10"><div><video  src={`${loading}`} autoPlay
-            loop
-             muted className="w-[150px]"/></div></div>
     </div>
   );
 }
