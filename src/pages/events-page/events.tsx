@@ -7,7 +7,7 @@ type Props = {}
 
 const Events = (props: Props) => {
   return (
-    <div className=' h-full w-full bg-[#d7d7d7] text-white' style={{backgroundColor: '#2d3436', 'backgroundImage': 'linear-gradient(147deg, #000000 0%, #434343 74%)'}}>
+    <div className=' h-full w-full bg-[#d7d7d7] text-white' style={{backgroundColor: '#2d3436', 'backgroundImage': ' linear-gradient(147deg, #4d4855 0%, #000000 74%)'}}>
       <Navbar/>
       <div>
       <div className='font-extrabold  pt-20 text-center text-4xl'>

@@ -7,14 +7,16 @@ const Navbar = () => {
   return (
 
     <div className={` transition-all fixed ${ scrollDirection === "down" ? "-top-20" : "top-0"} z-50 max-w-[100vw] min-w-[100vw] bg-black`}>
-    <ul className="hidden sm:flex flex-row items-center justify-center">
-                <li className="text-white mx-9 py-5"><Link to="/" className="text-3xl">
+    <div className="hidden sm:flex flex-row items-center justify-between w-full">
+                <div className="text-white mx-9 py-5"><Link to="/" className="text-3xl">
                 NET-NEX
-                    </Link></li>
+                </Link>
+                </div>
+                <ul className='flex '>
                 <li className="text-white mx-9 "><Link to="/events" className="hover:text-b3">EVENTS</Link></li>
                 <li className="text-white mx-9 "><Link to="/projects" className="hover:text-b3">PROJECTS</Link></li>
-                
-            </ul>
+                </ul>
+            </div>
             <ul className="flex items-center justify-between sm:hidden">
                 <li className="text-white mx-9 text-center py-3"><Link to="/" className="text-3xl">
                     Net-Nex
