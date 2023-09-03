@@ -3,6 +3,7 @@ import type { Engine, ISourceOptions } from "tsparticles-engine";
 import { loadFull } from "tsparticles";
 import { loadPolygonMaskPlugin } from "tsparticles-plugin-polygon-mask";
 import { useCallback } from "react";
+import wifi from '../utils/wifi.gif'
 export default function Preloader() {
   const particlesInit = useCallback(async (engine: Engine) => {
     await loadFull(engine);
@@ -10,18 +11,34 @@ export default function Preloader() {
   }, []);
 
   const options = {
-    name: "Polygon Mask",
+    autoPlay: true,
+    background: {
+      color: {
+        value: "#000"
+      },
+      image: "/logo.svg",
+      position: "50% 50%",
+      repeat: "no-repeat",
+      size: "20%",
+      opacity: 1
+    },
+    defaultThemes: {},
+    delay: 0,
+    fullScreen: {
+      enable: true,
+      zIndex: -1
+    },
+    detectRetina: true,
+    duration: 0,
+    fpsLimit: 120,
     interactivity: {
+      detectsOn: "window",
       events: {
         onClick: {
-          enable: false,
-          mode: "push"
-        },
-        onDiv: {
-          elementId: "repulse-div",
-          enable: false,
+          enable: true,
           mode: "repulse"
         },
+        
         onHover: {
           enable: true,
           mode: "bubble",
@@ -30,14 +47,41 @@ export default function Preloader() {
             force: 2,
             smooth: 10
           }
+        },
+        resize: {
+          delay: 0.5,
+          enable: true
         }
       },
       modes: {
+        trail: {
+          delay: 1,
+          pauseOnStop: false,
+          quantity: 1
+        },
+        attract: {
+          distance: 200,
+          duration: 0.4,
+          easing: "ease-out-quad",
+          factor: 1,
+          maxSpeed: 50,
+          speed: 1
+        },
+        bounce: {
+          distance: 200
+        },
         bubble: {
-          distance: 10,
+          distance: 250,
           duration: 2,
-          opacity: 8,
-          size: 6
+          mix: false,
+          opacity: 0,
+          size: 0,
+          divs: {
+            distance: 200,
+            duration: 0.4,
+            mix: false,
+            selectors: []
+          }
         },
         connect: {
           distance: 80,
@@ -47,99 +91,181 @@ export default function Preloader() {
           radius: 60
         },
         grab: {
-          distance: 100,
+          distance: 400,
           links: {
+            blink: false,
+            consent: false,
             opacity: 1
           }
         },
         push: {
+          default: true,
+          groups: [],
           quantity: 4
         },
         remove: {
           quantity: 2
         },
         repulse: {
-          distance: 200,
-          duration: 0.4
+          distance: 400,
+          duration: 0.4,
+          factor: 100,
+          speed: 1,
+          maxSpeed: 50,
+          easing: "ease-out-quad",
+          divs: {
+            distance: 200,
+            duration: 0.4,
+            factor: 100,
+            speed: 1,
+            maxSpeed: 50,
+            easing: "ease-out-quad",
+            selectors: []
+          }
         },
         slow: {
-          active: false,
-          radius: 0,
-          factor: 1
+          factor: 3,
+          radius: 200
+        },
+        light: {
+          area: {
+            gradient: {
+              start: {
+                value: "#ffffff"
+              },
+              stop: {
+                value: "#000000"
+              }
+            },
+            radius: 1000
+          },
+          shadow: {
+            color: {
+              value: "#000000"
+            },
+            length: 2000
+          }
         }
       }
     },
+    manualParticles: [],
     particles: {
+  
       color: {
-        value: "#ffffff"
-      },
-      links: {
-        blink: false,
-        color: "#ffffff",
-        consent: false,
-        distance: 30,
-        enable: true,
-        opacity: 0.4,
-        width: 1
+        value: "#ffffff",
       },
       move: {
+        angle: {
+          offset: 0,
+          value: 90
+        },
+       
+        center: {
+          x: 50,
+          y: 50,
+          mode: "percent",
+          radius: 0
+        },
+        decay: 0,
+        distance: {},
+        direction: "none",
+        drift: 0,
         enable: true,
-        outModes: "bounce",
-        speed: 1
+        outModes: {
+          default: "out",
+          bottom: "out",
+          left: "out",
+          right: "out",
+          top: "out"
+        },
+        random: true,
+        size: false,
+        speed: 1,
+        spin: {
+          acceleration: 0,
+          enable: false
+        },
+        straight: false,
+        trail: {
+          enable: false,
+          length: 10,
+          fill: {}
+        },
+        vibrate: false,
+        warp: false
       },
       number: {
+        density: {
+          enable: true,
+          width: 1920,
+          height: 1080
+        },
         limit: 0,
-        value: 200
+        value: 160
       },
       opacity: {
-        animation: {
+        random: {
           enable: true,
-          speed: 2,
-          sync: false
+          minimumValue: 0.1
         },
         value: {
-          min: 0.05,
-          max: 0.4
+          min: 0,
+          max: 1
+        },
+        animation: {
+          count: 0,
+          enable: true,
+          speed: 1,
+          decay: 0,
+          delay: 0,
+          sync: false,
+          mode: "auto",
+          startValue: "random",
+          destroy: "none",
+          minimumValue: 0
         }
       },
+      reduceDuplicates: false,
       shape: {
+        close: true,
+        fill: true,
+        options: {},
         type: "circle"
       },
       size: {
-        value: 1
+        random: {
+          enable: true,
+          minimumValue: 1
+        },
+        value: {
+          min: 1,
+          max: 3
+        },
+      },
+      stroke: {
+        width: 0
+      },
+    },
+    pauseOnBlur: true,
+    pauseOnOutsideViewport: true,
+    responsive: [],
+    smooth: false,
+    style: {},
+    themes: [],
+    zLayers: 100,
+    motion: {
+      disable: false,
+      reduce: {
+        factor: 4,
+        value: true
       }
-    },
-    polygon: {
-      draw: {
-        enable: true,
-        lineColor: "rgba(255,255,255,0.2)",
-        lineWidth: 0,
-        lineHeight : 5
-
-      },
-      enable: true,
-      move: {
-        radius: 10
-      },
-      inline: {
-        arrangement: "equidistant"
-      },
-      scale: 1,
-      type: "inline",
-      url: "/nn.svg"
-    },
-    background: {
-      color: "#000000",
-      image: "",
-      position: "50% 50%",
-      repeat: "no-repeat",
-      size: "cover"
     }
   } as ISourceOptions;
 
   return (
-    <div className="App z-[999]">
-      <Particles id="tsparticles" options={options} init={particlesInit} />
+    <div className="relative min-w-[100vw] min-h-[100vh]">
+      <Particles id="tsparticles" options={options} init={particlesInit} className="z-[0]"/>
+      <div className="text-white w-[100vw] h-[100vh] flex text-xl justify-center items-center z-10"><div ><iframe src="https://giphy.com/embed/rIqUQgjJa5v7Z0gSmD"></iframe></div></div>
     </div>
   );
 }

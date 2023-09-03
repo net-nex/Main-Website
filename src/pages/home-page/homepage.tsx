@@ -10,7 +10,7 @@ const Homepage = (props: Props) => {
   return (
     <>
     <Navbar/>
-    <Suspense fallback={<Preloader/>}>
+    <Suspense fallback={<div className='fixed top-0 left-0 min-w-[100vw] min-h-[100vh] bg-black z-[999] pt-14 text-4xl text-white'><Preloader/></div>}>
     <Hero/>
     </Suspense>
     <About/>
