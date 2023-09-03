@@ -3,7 +3,6 @@ import type { Engine, ISourceOptions } from "tsparticles-engine";
 import { loadFull } from "tsparticles";
 import { loadPolygonMaskPlugin } from "tsparticles-plugin-polygon-mask";
 import { useCallback } from "react";
-import nn from './nn.svg'
 export default function Preloader() {
   const particlesInit = useCallback(async (engine: Engine) => {
     await loadFull(engine);
