@@ -1,4 +1,4 @@
-import Particles from "react-particles";
+import Particles from "react-tsparticles";
 import type { Engine, ISourceOptions } from "tsparticles-engine";
 import { loadFull } from "tsparticles";
 import { loadPolygonMaskPlugin } from "tsparticles-plugin-polygon-mask";
