@@ -1,12 +1,15 @@
 import React,{useState} from 'react'
 import { useScrollDirection } from './useScroll';
 import { Link } from 'react-router-dom';
+import { Fade } from "react-awesome-reveal";
+
 const Navbar = () => {
     const scrollDirection = useScrollDirection(); 
     const [nav,setNav] = useState(false);
   return (
-
+    <div className=' z-50 '>
     <div className={` transition-all fixed ${ scrollDirection === "down" ? "-top-20" : "top-0"} z-50 max-w-[100vw] min-w-[100vw] bg-black`}>
+    <Fade triggerOnce className='z-[900]'> 
     <div className="hidden sm:flex flex-row items-center justify-between w-full">
                 <div className="text-white mx-9 py-5"><Link to="/" className="text-3xl">
                 NET-NEX
@@ -28,6 +31,7 @@ const Navbar = () => {
                 </li>
             </ul>
             {nav &&
+            <Fade direction='down' cascade duration={100}>
             <div className="duration-600 transition-all">
                 <ul className="flex sm:hidden flex-col items-center justify-center transition-all ease-in duration-300 ">
                     <li className="text-white mx-9 "><Link to="/events" className="hover:text-b3">events</Link></li>
@@ -35,9 +39,11 @@ const Navbar = () => {
  
                 </ul>
             </div>
+            </Fade>
               }
+        </Fade>
         </div>
-    
+        </div>
   )
 }
 

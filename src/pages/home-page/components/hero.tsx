@@ -1,14 +1,15 @@
 import React from 'react'
 import bgVideo from './../../../bgVideo.mp4';
+import {Slide} from 'react-awesome-reveal'
 type Props = {}
 
 const Hero = (props: Props) => {
   return (
     <main>
-      
     <div className="relative flex items-center      
         justify-center h-screen overflow-hidden">
       <div className='flex flex-col xs:flex-row sm:flex-row md:flex-row items-center justify-center'>
+          <Slide direction='left' duration={500}>
       <div className='z-30 w-[35vw] sm:w-[35vw] md:w-[30vw] lg:w-[25vw]'>
     <svg  viewBox="0 0 710 687" fill="none" xmlns="http://www.w3.org/2000/svg">
       <g clipPath="url(#clip0_4_70)">
@@ -40,12 +41,15 @@ const Hero = (props: Props) => {
       </defs>
     </svg>
     </div>
+    </Slide>
+    <Slide direction='right' duration={500}>
     <div className='font-bold m-5 flex flex-col  '>
         <div className='text-4xl sm:text-6xl z-30 text-white text-center'>NETWORKING</div> 
         <div className='z-30 text-6xl sm:text-8xl mt-3 bg-transperant pl-3 rounded-3xl text-[#000] bg-white tracking-[1rem] text-center mix-blend-screen'>
           
           NEXUS</div> 
     </div>
+    </Slide>
     </div>
         <video src=
             {`${bgVideo}`}

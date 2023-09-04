@@ -3,7 +3,7 @@ import Footer from './../../../components/Footer'
 import Creative from '../../../utils/Creatives.webp'
 import Tech from '../../../utils/tech.webp'
 import Corporate from '../../../utils/corp.webp'
-
+import {Fade} from 'react-awesome-reveal'
 type Props = {}
 
 const Domains = (props: Props) => {

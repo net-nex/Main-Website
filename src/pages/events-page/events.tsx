@@ -1,9 +1,11 @@
 import React from 'react'
 import Navbar from '../../components/Navbar'
-import expExplore from '../../utils/EspExplore.svg'
+import expExplore from '../../utils/components.webp'
 import './events.css'
 import Footer from '../../components/Footer'
 import Preloader from '../../components/preLoader'
+import {Slide} from 'react-awesome-reveal'
+import {Fade} from 'react-awesome-reveal'
 type Props = {}
 
 const Events = (props: Props) => {
@@ -16,6 +18,7 @@ const Events = (props: Props) => {
         UPCOMING EVENT
       </div>
       <div className='flex flex-col md:flex-row w-full h-full pt-7'>
+        <Fade  duration={700}>
         <div className=' md:sticky w-full md:w-[50vw] top-10 flex flex-col items-center justify-start text-center text-3xl h-full '>
           <div className='text-3xl text-center w-[90vw] pt-9'>ESP EXPLORE</div>
           <img src={`${expExplore}`} alt='event'/>
@@ -41,12 +44,17 @@ const Events = (props: Props) => {
 </svg>
 
             </div>
+            
           </div>
+          
         </div>
+        </Fade>
         <div className='text-center text-3xl w-full h-full flex flex-col justify-start'>
+    <Fade >
           <div className="timeline">
   <div className="outer text-sm border-slate-500 md:border-l-2 p-2 w-full">
     <div className="card">
+      
       <div className="info">
         <h3 className="title">CIRCUITRY UNVEILED</h3>
         <p>🔌 Journey into the core of electronics and programming with us! This session is your gateway to understanding fundamental circuit operations – from breadboards to voltage. Plus, dive into the world of C++ and grasp the essentials that power embedded systems.</p>
@@ -64,7 +72,7 @@ const Events = (props: Props) => {
         <p>💻 Embark on a coding odyssey! Discover the realm of C++ programming tailored for embedded systems. Learn how to communicate with sensors and make your circuit respond intelligently. Unleash the power of code and electronics.</p>
       </div>
     </div>
-    <div className="card">
+    <div className="card" id='lastcard'>
       <div className="info">
         <h3 className="title">PROJECT LAUNCHPAD</h3>
         <p>🚀 Elevate your project to the digital realm! Understand the importance of version control and collaboration using GitHub. We'll guide you through uploading your masterpiece, ensuring your innovation is showcased for the world to see.</p>
@@ -72,6 +80,7 @@ const Events = (props: Props) => {
     </div>
   </div>
 </div>
+</Fade>
         </div>
       </div>
       </div>

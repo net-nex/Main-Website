@@ -72,10 +72,10 @@
   }
   
   /* Removing the border if it is the last card  and it's even */
-  .card:last-child:nth-child(even)::before {
-    border-bottom: 0;
-    border-bottom-right-radius: 0;
+  .card:last-child::before {
+    border-radius: 0 50px 50px 0;
   }
+
   
   /* Information about the timeline */
   .info {
@@ -103,22 +103,30 @@
     border-radius: 999px;
     border: 3px solid orangered;
   }
-  
-  /* text right if the card is even  */
   .card:nth-child(even) > .info > .title {
     text-align: right;
   }
   .card:nth-child(odd) > .info > .title {
     text-align: left;
   }
-  
-  /* setting dot to the left if the card is odd */
-  .card:nth-child(odd) > .info > .title::before {
+    .card:nth-child(odd) > .info > .title::before {
     left: -45px;
   }
-  
-  /* setting dot to the right if the card is odd */
-  .card:nth-child(even) > .info > .title::before {
+    .card:nth-child(even) > .info > .title::before {
     right: -45px;
   }
-  
+  ::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #fff;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #000;
+}
+
