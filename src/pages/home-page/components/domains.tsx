@@ -10,7 +10,7 @@ const Domains = (props: Props) => {
   return (
     <div className='bg-Background bg-center bg-cover min-h-[80vh] max-w-[100vw] pt-2' >
     <div className='flex flex-col items-center'>
-        <div className='tracking-[0.65rem] text-5xl xl:text-9xl sm:text-xl md:text-5xl pt-5 text-center text-white font-bold'>
+        <div className='tracking-[0.65rem] text-5xl xl:text-9xl sm:text-xl md:text-5xl pt-5 text-center text-white font-Lexend font-bold'>
             DOMAINS
         </div>
         <div className='mt-9 self-center grid grid-cols-2 items-center justify-items-center align-middle justify-around min-w-full max-w-full p-2'>

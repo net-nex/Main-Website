@@ -26,7 +26,7 @@ const Projects = (props: Props) => {
           <img src={`${web}`} alt='logo'/>
         </Fade>
         </div>
-        <div className='text-3xl font-extrabold'>Coming Soon.....</div>
+        <div className='text-3xl font-extrabold font-kanit'>Coming Soon.....</div>
       <Footer/>
       </div>
      

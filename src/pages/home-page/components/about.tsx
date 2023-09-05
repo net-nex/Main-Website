@@ -6,7 +6,7 @@ const About = (props: Props) => {
     <div className=' min-h-[100vh] max-w-[100vw]   text-white flex flex-col sm:flex-row items-center justify-around' >
             <div className='py-5 bg-black min-h-[50vh] sm:h-[100vh] w-full flex flex-col items-center justify-center'>
         <Fade>
-                <div className='font-bold  tracking-[0.75rem] text-6xl xl:text-9xl sm:text-6xl md:text-5xl  mx-4 z-30 '>
+                <div className='font-bold font-Lexend tracking-[0.75rem] text-6xl xl:text-9xl sm:text-6xl md:text-5xl  mx-4 z-30 '>
                     ABOUT
                 </div>
                 <div className='text-md mt-2 mx-4 sm:w-[40vw] border-2 p-4 text-justify'>
@@ -22,7 +22,7 @@ const About = (props: Props) => {
             </div>
             <div className='bg-white min-h-[50vh] sm:h-[100vh] w-full flex flex-col items-center justify-center py-2'>
             <Fade>
-                <div className='text-black font-bold tracking-[0.75rem] text-5xl xl:text-9xl sm:text-xl md:text-5xl   mx-4'>
+                <div className='text-black font-Lexend font-bold tracking-[0.75rem] text-5xl xl:text-9xl sm:text-xl md:text-5xl   mx-4'>
                     VISION 
                 </div>
                 <div className='text-justify text-black text-md mt-2 mx-4 sm:w-[40vw] border-2 p-4 border-black'>

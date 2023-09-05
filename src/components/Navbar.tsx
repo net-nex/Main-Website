@@ -11,7 +11,7 @@ const Navbar = () => {
     <div className={` transition-all fixed ${ scrollDirection === "down" ? "-top-20" : "top-0"} z-50 max-w-[100vw] min-w-[100vw] bg-black`}>
     <Fade triggerOnce className='z-[900]'> 
     <div className="hidden sm:flex flex-row items-center justify-between w-full">
-                <div className="text-white mx-9 py-5"><Link to="/" className="text-3xl">
+                <div className="text-white mx-9 py-5"><Link to="/" className="text-3xl font-kanit">
                 NET-NEX
                 </Link>
                 </div>
