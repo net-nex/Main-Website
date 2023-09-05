@@ -4,7 +4,6 @@ import expExplore from '../../utils/components.webp'
 import './events.css'
 import Footer from '../../components/Footer'
 import Preloader from '../../components/preLoader'
-import {Slide} from 'react-awesome-reveal'
 import {Fade} from 'react-awesome-reveal'
 type Props = {}
 
@@ -43,7 +42,7 @@ const Events = (props: Props) => {
   <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
   <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
 </svg>
-            Tech Park 404-406
+            Tech Park 405-406
             </div>
              <div className='flex text-lg col-span-1'>
              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
