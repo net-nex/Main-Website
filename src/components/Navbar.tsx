@@ -21,7 +21,8 @@ const Navbar = () => {
                 </ul>
             </div>
             <ul className="flex items-center justify-between sm:hidden">
-                <li className="text-white mx-9 text-center py-3"><Link to="/" className="text-3xl font-kanit">
+                <li className="text-white mx-9 text-center py-3"><Link to="/" className=" text-3xl font-kanit">
+
                     Net-Nex
                     </Link></li>
                 <li  className="cursor-pointer" onClick={() => {setNav((nav) => !nav)}}>
