@@ -23,7 +23,7 @@ const Navbar = () => {
             <ul className="flex items-center justify-between sm:hidden">
                 <li className="text-white mx-9 text-center py-3"><Link to="/" className=" text-3xl font-kanit">
 
-                    Net-Nex
+                    NET-NEX
                     </Link></li>
                 <li  className="cursor-pointer" onClick={() => {setNav((nav) => !nav)}}>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 text-white mx-9 hover:text-b3">
