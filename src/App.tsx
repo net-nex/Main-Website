@@ -3,6 +3,7 @@ import Homepage from './pages/home-page/homepage';
 import Events from './pages/events-page/events';
 import Projects from './pages/projects/projects';
 import Registeration from "./pages/reg-page";
+import Induction from "./pages/ind-page";
 function App() {
   return (
     <BrowserRouter>
@@ -11,6 +12,7 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/events" element={<Events />} />
           <Route path="/reg" element={<Registeration />} />
+          <Route path="/induction" element={<Induction />} />
       </Routes>
     </BrowserRouter>
   );
