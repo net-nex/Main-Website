@@ -1,8 +1,7 @@
-import React from 'react'
-import Footer from './../../../components/Footer'
+import Corporate from '../../../utils/corp.webp'
 import Creative from '../../../utils/Creatives.webp'
 import Tech from '../../../utils/tech.webp'
-import Corporate from '../../../utils/corp.webp'
+import Footer from './../../../components/Footer'
 // import {Fade} from 'react-awesome-reveal'
 type Props = {}
 
