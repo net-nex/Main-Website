@@ -1,9 +1,8 @@
-import React from 'react'
-import Navbar from '../../components/Navbar'
-import './events.css'
+import { Fade } from 'react-awesome-reveal'
 import Footer from '../../components/Footer'
+import Navbar from '../../components/Navbar'
 import Preloader from '../../components/preLoader'
-import {Fade} from 'react-awesome-reveal'
+import './events.css'
 
 import server from '../../utils/servers.png'
 type Props = {}
@@ -23,7 +22,7 @@ const Events = (props: Props) => {
           <Fade  duration={700}><img src={`${server}`} alt='event' className='px-9'/></Fade>
           <Fade  duration={700}>
           <div className='grid grid-cols-1 md:grid-cols-2 gap-5 py-5 justify-between w-full'>
-            <a href="https://konfhub.com/netnex" target="_blank" className='col-span-1'>
+            <a href="https://konfhub.com/netnex" target="_blank" rel="noreferrer" className='col-span-1'>
             <div className='flex text-lg text-blue-600 font-extrabold'>
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
