@@ -1,9 +1,9 @@
-import Particles from "react-tsparticles";
-import type { Engine, ISourceOptions } from "tsparticles-engine";
-import { loadFull } from "tsparticles";
-import { loadPolygonMaskPlugin } from "tsparticles-plugin-polygon-mask";
 import { useCallback } from "react";
-import loading from '../utils/loading.mp4'
+import Particles from "react-tsparticles";
+import { loadFull } from "tsparticles";
+import type { Engine, ISourceOptions } from "tsparticles-engine";
+import { loadPolygonMaskPlugin } from "tsparticles-plugin-polygon-mask";
+// import loading from '../utils/loading.mp4'
 export default function Preloader() {
   const particlesInit = useCallback(async (engine: Engine) => {
     await loadFull(engine);

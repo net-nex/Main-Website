@@ -1,10 +1,9 @@
-import React from 'react'
-import Preloader from '../../components/preLoader'
-import Navbar from '../../components/Navbar'
 import Footer from '../../components/Footer'
-import loading from '../../utils/loading.mp4'
+import Navbar from '../../components/Navbar'
+import Preloader from '../../components/preLoader'
+// import loading from '../../utils/loading.mp4'
+import { Fade } from 'react-awesome-reveal'
 import web from '../../utils/web.webp'
-import {Fade} from 'react-awesome-reveal'
 type Props = {}
 
 const Projects = (props: Props) => {
