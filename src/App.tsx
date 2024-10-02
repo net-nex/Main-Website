@@ -22,7 +22,7 @@ function App() {
           <Route path="/events" element={<Events />} />
           <Route path="/reg" element={<Registeration />} />
           <Route path="/induction" element={<Induction />} />
-          <Route path="/recruitments" element={<RecruitmentsRedirect />} />
+          <Route path="/recruitment" element={<RecruitmentsRedirect />} />
       </Routes>
     </BrowserRouter>
   );
